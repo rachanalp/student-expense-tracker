@@ -90,3 +90,24 @@ list-style: none;
 padding: 12px;
 border-bottom: 1px solid #ddd;
 }
+#expenseList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#expenseList button {
+    width: auto;
+    padding: 8px 14px;
+    margin: 0;
+    background: #dc3545;
+}
+
+#expenseList button:hover {
+    background: #b02a37;
+}
