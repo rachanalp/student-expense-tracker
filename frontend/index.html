@@ -2,69 +2,172 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Student Expense Tracker</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+    <!-- ======================================
+         NAVBAR
+         ====================================== -->
+
     <header class="navbar">
-        <div class="logo">💰 Student Expense Tracker</div>
-        <div class="nav-subtitle">Manage your money smartly</div>
+
+        <div class="logo">
+            💰 Student Expense Tracker
+        </div>
+
+        <div class="nav-subtitle">
+            Manage your money smartly
+        </div>
+
+        <div class="user-section">
+
+            <p id="welcomeUser"></p>
+
+            <button
+                id="logoutButton"
+                class="secondary-button"
+            >
+                Logout
+            </button>
+
+        </div>
+
     </header>
 
 
     <main class="container">
 
-        <!-- DASHBOARD -->
+
+        <!-- ======================================
+             DASHBOARD
+             ====================================== -->
 
         <section class="dashboard">
 
+
             <div class="summary-card">
-                <h3>Monthly Budget</h3>
 
-                <p id="budgetDisplay">₹10,000</p>
+                <h3>
+                    Monthly Budget
+                </h3>
 
-                <button id="changeBudget">Change Budget</button>
+                <p id="budgetDisplay">
+                    ₹10,000
+                </p>
+
+                <button
+                    id="changeBudget"
+                    class="secondary-button"
+                >
+                    Change Budget
+                </button>
+
             </div>
 
 
             <div class="summary-card">
-                <h3>Total Spent</h3>
 
-                <p id="totalSpent">₹0</p>
+                <h3>
+                    Total Spent
+                </h3>
+
+                <p id="totalSpent">
+                    ₹0
+                </p>
+
             </div>
 
 
             <div class="summary-card">
-                <h3>Remaining</h3>
 
-                <p id="remainingBudget">₹10,000</p>
+                <h3>
+                    Remaining
+                </h3>
+
+                <p id="remainingBudget">
+                    ₹10,000
+                </p>
+
             </div>
 
 
             <div class="summary-card">
-                <h3>Total Expenses</h3>
 
-                <p id="expenseCount">0</p>
+                <h3>
+                    Total Expenses
+                </h3>
+
+                <p id="expenseCount">
+                    0
+                </p>
+
             </div>
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Average Expense
+                </h3>
+
+                <p id="averageExpense">
+                    ₹0
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Top Category
+                </h3>
+
+                <p id="topCategory">
+                    None
+                </p>
+
+            </div>
+
 
         </section>
 
 
-        <!-- BUDGET PROGRESS -->
+        <!-- ======================================
+             BUDGET PROGRESS
+             ====================================== -->
 
         <section class="progress-section">
 
             <div class="progress-header">
-                <span>Budget Usage</span>
 
-                <span id="budgetPercentage">0%</span>
+                <span>
+                    Budget Usage
+                </span>
+
+                <span id="budgetPercentage">
+                    0% used
+                </span>
+
             </div>
+
 
             <div class="progress-bar">
 
@@ -75,13 +178,19 @@
         </section>
 
 
-        <!-- ADD EXPENSE -->
+        <!-- ======================================
+             ADD / EDIT EXPENSE
+             ====================================== -->
 
         <section class="card">
 
-            <h2 id="formTitle">Add Expense</h2>
+            <h2 id="formTitle">
+                Add Expense
+            </h2>
+
 
             <div class="form-grid">
+
 
                 <div class="form-group">
 
@@ -176,6 +285,7 @@
 
                 </div>
 
+
             </div>
 
 
@@ -202,6 +312,7 @@
                     Add Expense
                 </button>
 
+
                 <button
                     id="cancelEdit"
                     class="secondary-button hidden"
@@ -214,24 +325,32 @@
         </section>
 
 
-        <!-- EXPENSE LIST -->
+        <!-- ======================================
+             EXPENSE LIST
+             ====================================== -->
 
         <section class="card">
 
             <div class="section-heading">
 
                 <div>
-                    <h2>Recent Expenses</h2>
+
+                    <h2>
+                        Recent Expenses
+                    </h2>
 
                     <p class="muted">
-                        Search, filter and manage your expenses
+                        Search, filter and manage
+                        your expenses
                     </p>
+
                 </div>
 
             </div>
 
 
             <div class="filters">
+
 
                 <input
                     type="text"
@@ -246,23 +365,37 @@
                         All Categories
                     </option>
 
-                    <option value="Food">Food</option>
+                    <option value="Food">
+                        Food
+                    </option>
 
-                    <option value="Travel">Travel</option>
+                    <option value="Travel">
+                        Travel
+                    </option>
 
-                    <option value="Education">Education</option>
+                    <option value="Education">
+                        Education
+                    </option>
 
-                    <option value="Shopping">Shopping</option>
+                    <option value="Shopping">
+                        Shopping
+                    </option>
 
-                    <option value="Bills">Bills</option>
+                    <option value="Bills">
+                        Bills
+                    </option>
 
                     <option value="Entertainment">
                         Entertainment
                     </option>
 
-                    <option value="Health">Health</option>
+                    <option value="Health">
+                        Health
+                    </option>
 
-                    <option value="Other">Other</option>
+                    <option value="Other">
+                        Other
+                    </option>
 
                 </select>
 
@@ -287,6 +420,7 @@
 
                 </select>
 
+
             </div>
 
 
@@ -295,26 +429,58 @@
         </section>
 
 
-        <!-- CHART -->
+        <!-- ======================================
+             CATEGORY CHART
+             ====================================== -->
 
         <section class="card chart-section">
 
-            <h2>Expenses by Category</h2>
+            <h2>
+                Expenses by Category
+            </h2>
 
-            <canvas id="expenseChart"></canvas>
+            <canvas
+                id="expenseChart"
+            ></canvas>
 
         </section>
+
+
+        <!-- ======================================
+             MONTHLY CHART
+             ====================================== -->
+
+        <section class="card chart-section">
+
+            <h2>
+                Monthly Expenses
+            </h2>
+
+            <canvas
+                id="monthlyExpenseChart"
+            ></canvas>
+
+        </section>
+
 
     </main>
 
 
-    <!-- CHART.JS -->
+    <!-- ======================================
+         CHART.JS
+         ====================================== -->
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
 
-    <!-- OUR JAVASCRIPT -->
+
+    <!-- ======================================
+         OUR JAVASCRIPT
+         ====================================== -->
 
     <script src="script.js"></script>
+
 
 </body>
 

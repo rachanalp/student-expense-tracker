@@ -322,3 +322,143 @@ button {
     }
 
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .summary div {
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    #expenseList {
+        padding: 0;
+    }
+
+    #expenseList li {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    #expenseList button {
+        width: 100%;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
+/* ==========================================
+   EXPENSE LIST
+   ========================================== */
+
+#expenseList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#expenseList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: #f8f9fa;
+}
+
+.expense-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expense-info strong {
+    font-size: 17px;
+}
+
+.expense-info span {
+    font-weight: bold;
+}
+
+.expense-info small {
+    color: #666;
+}
+
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+#expenseList button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#expenseList button:hover {
+    opacity: 0.8;
+}
+
+
+/* ==========================================
+   HIDDEN
+   ========================================== */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    #expenseList li {
+        flex-wrap: wrap;
+    }
+
+    #expenseList button {
+        margin-top: 5px;
+    }
+}
