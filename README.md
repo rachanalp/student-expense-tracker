@@ -53,13 +53,22 @@ student-expense-tracker/
 │
 ├── frontend/
 │   ├── index.html
+│   ├── login.html
+│   ├── signup.html
 │   ├── style.css
 │   └── script.js
 │
 ├── backend/
 │   ├── src/
-│   └── pom.xml
+│   ├── pom.xml
+│   └── mvnw.cmd
 │
 ├── database/
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── add-expense.png
+│   ├── expense-chart.png
+│   └── monthly-expenses.png
 │
 └── README.md
